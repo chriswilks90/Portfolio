@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work — Chris Wilkins</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400;1,600;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="work.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ══ NAV ══ -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Chris Wilkins</a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="work.html" class="nav__active">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#contact" class="nav__cta">Let's Talk</a></li>
+    </ul>
+    <button class="nav__hamburger" id="navHamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+  <div class="nav__overlay" id="navOverlay"></div>
+
+  <!-- ══ PAGE HEADER ══ -->
+  <section class="wk-header">
+    <div class="wk-header__inner">
+      <p class="wk-header__eyebrow">Selected Work</p>
+      <h1 class="wk-header__heading">Six projects.<br><em>Real problems.</em></h1>
+      <p class="wk-header__sub">UI/UX · Branding · Freelance · 2023–2024</p>
+    </div>
+  </section>
+
+  <!-- ══ FILTER BAR ══ -->
+  <div class="wk-filter">
+    <div class="wk-filter__inner">
+      <button class="wk-filter__btn is-active" data-filter="all">All</button>
+      <button class="wk-filter__btn" data-filter="ui-ux">UI/UX</button>
+      <button class="wk-filter__btn" data-filter="branding">Branding</button>
+      <button class="wk-filter__btn" data-filter="freelance">Freelance</button>
+    </div>
+  </div>
+
+  <!-- ══ PROJECT GRID ══ -->
+  <section class="wk-grid-section">
+    <div class="wk-grid" id="projectGrid">
+
+      <!-- Movies App — Large -->
+      <a href="#" class="wk-card wk-card--large" data-category="ui-ux">
+        <div class="wk-card__image" style="background-color: #1a1a2e;">
+          <!-- Replace with: style="background-image: url('your-image.jpg')" -->
+          <div class="wk-card__img-placeholder">🎬</div>
+          <div class="wk-card__hover-overlay">
+            <span class="wk-card__hover-text">View Case Study</span>
+            <span class="wk-card__arrow">↗</span>
+          </div>
+        </div>
+        <div class="wk-card__content">
+          <div class="wk-card__tags">
+            <span class="wk-tag">UI/UX</span>
+            <span class="wk-tag">Mobile</span>
+            <span class="wk-tag">Google Certificate</span>
+          </div>
+          <h2 class="wk-card__title">Movies App</h2>
+          <p class="wk-card__desc">A ticketing and discovery app designed around how people actually choose what to watch — not just browse.</p>
+        </div>
+      </a>
+
+      <!-- Uniqlo — Large -->
+      <a href="#" class="wk-card wk-card--large" data-category="ui-ux">
+        <div class="wk-card__image" style="background-color: #f5f0eb;">
+          <div class="wk-card__img-placeholder">🛍</div>
+          <div class="wk-card__hover-overlay">
+            <span class="wk-card__hover-text">View Case Study</span>
+            <span class="wk-card__arrow">↗</span>
+          </div>
+        </div>
+        <div class="wk-card__content">
+          <div class="wk-card__tags">
+            <span class="wk-tag">UI/UX</span>
+            <span class="wk-tag">Web Redesign</span>
+          </div>
+          <h2 class="wk-card__title">Uniqlo Redesign</h2>
+          <p class="wk-card__desc">Reimagining the Uniqlo homepage to reduce friction and better surface the brand's minimalist identity.</p>
+        </div>
+      </a>
+
+      <!-- Proximity Performance — Medium -->
+      <a href="#" class="wk-card" data-category="ui-ux freelance">
+        <div class="wk-card__image" style="background-color: #0f2027;">
+          <div class="wk-card__img-placeholder">⚡</div>
+          <div class="wk-card__hover-overlay">
+            <span class="wk-card__hover-text">View Case Study</span>
+            <span class="wk-card__arrow">↗</span>
+          </div>
+        </div>
+        <div class="wk-card__content">
+          <div class="wk-card__tags">
+            <span class="wk-tag">UI/UX</span>
+            <span class="wk-tag">Freelance</span>
+            <span class="wk-tag">Web</span>
+          </div>
+          <h2 class="wk-card__title">Proximity Performance</h2>
+          <p class="wk-card__desc">Full web design for a performance coaching brand — built to convert visitors into clients.</p>
+        </div>
+      </a>
+
+      <!-- Dirk's Chicken — Medium -->
+      <a href="#" class="wk-card" data-category="ui-ux">
+        <div class="wk-card__image" style="background-color: #2d1b00;">
+          <div class="wk-card__img-placeholder">🍗</div>
+          <div class="wk-card__hover-overlay">
+            <span class="wk-card__hover-text">View Case Study</span>
+            <span class="wk-card__arrow">↗</span>
+          </div>
+        </div>
+        <div class="wk-card__content">
+          <div class="wk-card__tags">
+            <span class="wk-tag">UI/UX</span>
+            <span class="wk-tag">Web Redesign</span>
+          </div>
+          <h2 class="wk-card__title">Dirk's Chicken</h2>
+          <p class="wk-card__desc">A full website redesign for a local restaurant brand — improving the ordering experience and visual identity.</p>
+        </div>
+      </a>
+
+      <!-- Cognitive Learning Ad Campaign — Medium -->
+      <a href="#" class="wk-card" data-category="branding">
+        <div class="wk-card__image" style="background-color: #0d1b2a;">
+          <div class="wk-card__img-placeholder">🧠</div>
+          <div class="wk-card__hover-overlay">
+            <span class="wk-card__hover-text">View Project</span>
+            <span class="wk-card__arrow">↗</span>
+          </div>
+        </div>
+        <div class="wk-card__content">
+          <div class="wk-card__tags">
+            <span class="wk-tag">Branding</span>
+            <span class="wk-tag">Graduation Project</span>
+          </div>
+          <h2 class="wk-card__title">Cognitive Learning Ad Campaign</h2>
+          <p class="wk-card__desc">A graduation project exploring how design and advertising can make cognitive learning concepts more accessible.</p>
+        </div>
+      </a>
+
+      <!-- Graphic Designs — Medium -->
+      <a href="#" class="wk-card" data-category="branding">
+        <div class="wk-card__image" style="background-color: #1a0533;">
+          <div class="wk-card__img-placeholder">✦</div>
+          <div class="wk-card__hover-overlay">
+            <span class="wk-card__hover-text">View Work</span>
+            <span class="wk-card__arrow">↗</span>
+          </div>
+        </div>
+        <div class="wk-card__content">
+          <div class="wk-card__tags">
+            <span class="wk-tag">Branding</span>
+            <span class="wk-tag">Logos</span>
+            <span class="wk-tag">Artwork</span>
+          </div>
+          <h2 class="wk-card__title">Graphic Designs</h2>
+          <p class="wk-card__desc">A collection of logo work and visual artwork spanning multiple clients and personal projects.</p>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Empty state when filter has no results -->
+    <div class="wk-empty" id="wkEmpty" style="display:none;">
+      <p>No projects in this category yet.</p>
+    </div>
+
+  </section>
+
+  <!-- ══ FOOTER CTA ══ -->
+  <footer class="footer" id="contact">
+    <div class="footer__inner">
+      <p class="footer__eyebrow">Let's collaborate</p>
+      <h2 class="footer__heading">Let's build something <em>great.</em></h2>
+      <a href="mailto:tophwilkins@gmail.com" class="footer__email">tophwilkins@gmail.com</a>
+      <div class="footer__links">
+        <a href="#">LinkedIn</a>
+        <a href="#">Dribbble</a>
+        <a href="#">Read.cv</a>
+      </div>
+      <p class="footer__copy">© 2026 Chris Wilkins. Designed with intention.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="work.js"></script>
+</body>
+</html>
