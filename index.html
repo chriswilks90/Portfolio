@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chris Wilks — Product Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400;1,600;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ══ NAV ══ -->
+  <nav class="nav">
+    <a href="/" class="nav__logo">Chris Wilks</a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="nav__cta">Let's Talk</a></li>
+    </ul>
+    <button class="nav__hamburger" id="navHamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+  <div class="nav__overlay" id="navOverlay"></div>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="hero__text">
+        <p class="hero__eyebrow">Product Designer · UX Research · Strategy</p>
+        <h1 class="hero__heading">
+          <span class="hero__line" data-delay="0">Designing for</span>
+          <span class="hero__line hero__line--italic" data-delay="120">people,</span>
+          <span class="hero__line" data-delay="240">not pixels.</span>
+        </h1>
+        <p class="hero__sub">Hey, I'm Chris — a product designer focused on user-centered experiences that solve real problems through research and strategy.</p>
+        <div class="hero__actions">
+          <a href="#work" class="hero__btn-primary">View My Work</a>
+          <a href="#about" class="hero__btn-ghost">About Me</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__blob"></div>
+        <div class="hero__avatar">
+          <div class="hero__avatar-placeholder">CW</div>
+        </div>
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Available for work
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══ MARQUEE ══ -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>UI Design</span>
+      <span class="marquee__dot">·</span>
+      <span>UX Research</span>
+      <span class="marquee__dot">·</span>
+      <span>Prototyping</span>
+      <span class="marquee__dot">·</span>
+      <span>Design Systems</span>
+      <span class="marquee__dot">·</span>
+      <span>Figma</span>
+      <span class="marquee__dot">·</span>
+      <span>User Testing</span>
+      <span class="marquee__dot">·</span>
+      <span>Wireframing</span>
+      <span class="marquee__dot">·</span>
+      <span>Strategy</span>
+      <span class="marquee__dot">·</span>
+      <span>UI Design</span>
+      <span class="marquee__dot">·</span>
+      <span>UX Research</span>
+      <span class="marquee__dot">·</span>
+      <span>Prototyping</span>
+      <span class="marquee__dot">·</span>
+      <span>Design Systems</span>
+      <span class="marquee__dot">·</span>
+      <span>Figma</span>
+      <span class="marquee__dot">·</span>
+      <span>User Testing</span>
+      <span class="marquee__dot">·</span>
+      <span>Wireframing</span>
+      <span class="marquee__dot">·</span>
+      <span>Strategy</span>
+      <span class="marquee__dot">·</span>
+    </div>
+  </div>
+
+  <!-- ══ WORK ══ -->
+  <section class="work" id="work">
+    <div class="work__inner">
+      <div class="work__header">
+        <p class="work__eyebrow">Selected Work</p>
+        <h2 class="work__heading">Projects that matter</h2>
+      </div>
+
+      <div class="work__grid">
+
+        <a href="#" class="work__card work__card--large">
+          <div class="work__card-image" style="background-color: #1a1a2e;">
+            <div class="work__card-img-placeholder">🎬</div>
+          </div>
+          <div class="work__card-content">
+            <div class="work__card-tags">
+              <span class="work__tag">UI/UX</span>
+              <span class="work__tag">Mobile</span>
+              <span class="work__tag">Google Certificate</span>
+            </div>
+            <h3 class="work__card-title">Movies App</h3>
+            <p class="work__card-desc">A ticketing and discovery app designed around how people actually choose what to watch — not just browse.</p>
+            <span class="work__card-link">View Case Study →</span>
+          </div>
+        </a>
+
+        <a href="#" class="work__card">
+          <div class="work__card-image" style="background-color: #f5f0eb;">
+            <div class="work__card-img-placeholder">🛍</div>
+          </div>
+          <div class="work__card-content">
+            <div class="work__card-tags">
+              <span class="work__tag">Redesign</span>
+              <span class="work__tag">E-commerce</span>
+            </div>
+            <h3 class="work__card-title">Uniqlo Redesign</h3>
+            <p class="work__card-desc">Reimagining the Uniqlo homepage to reduce friction and better surface the brand's minimalist identity.</p>
+            <span class="work__card-link">View Case Study →</span>
+          </div>
+        </a>
+
+        <a href="#" class="work__card">
+          <div class="work__card-image" style="background-color: #0f2027;">
+            <div class="work__card-img-placeholder">⚡</div>
+          </div>
+          <div class="work__card-content">
+            <div class="work__card-tags">
+              <span class="work__tag">Freelance</span>
+              <span class="work__tag">Web Design</span>
+            </div>
+            <h3 class="work__card-title">Proximity Performance</h3>
+            <p class="work__card-desc">Full web design for a performance coaching brand — built to convert visitors into clients.</p>
+            <span class="work__card-link">View Case Study →</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section class="about" id="about">
+    <div class="about__inner">
+      <div class="about__left">
+        <div class="about__photo">
+          <div class="about__photo-placeholder">CW</div>
+        </div>
+      </div>
+      <div class="about__right">
+        <p class="about__eyebrow">About Me</p>
+        <h2 class="about__heading">I design with <em>curiosity</em> at the core.</h2>
+        <p class="about__bio">I'm a junior product designer with a focus on user research and strategy. I believe great design starts before any screen is touched — in understanding the people you're building for.</p>
+        <p class="about__bio">Currently available for freelance and full-time opportunities.</p>
+        <div class="about__skills">
+          <span class="about__skill">Figma</span>
+          <span class="about__skill">User Research</span>
+          <span class="about__skill">Prototyping</span>
+          <span class="about__skill">Design Systems</span>
+          <span class="about__skill">Wireframing</span>
+          <span class="about__skill">UX Strategy</span>
+        </div>
+        <a href="mailto:tophwilkins@gmail.com" class="about__btn">Get In Touch →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER CTA ══ -->
+  <footer class="footer" id="contact">
+    <div class="footer__inner">
+      <p class="footer__eyebrow">Let's collaborate</p>
+      <h2 class="footer__heading">Let's build something <em>great.</em></h2>
+      <a href="mailto:tophwilkins@gmail.com" class="footer__email">tophwilkins@gmail.com</a>
+      <div class="footer__links">
+        <a href="#">LinkedIn</a>
+        <a href="#">Dribbble</a>
+        <a href="#">Read.cv</a>
+      </div>
+      <p class="footer__copy">© 2026 Chris Wilks. Designed with intention.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
