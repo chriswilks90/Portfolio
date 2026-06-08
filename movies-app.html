@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movies App | Chris Wilkins</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400;1,600;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cs.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ══ NAV ══ -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Chris Wilkins</a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="work.html" class="nav__active">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact" class="nav__cta">Let's Talk</a></li>
+    </ul>
+    <button class="nav__hamburger" id="navHamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+  <div class="nav__overlay" id="navOverlay"></div>
+
+  <!-- ══ CS HERO ══ -->
+  <section class="cs-hero cs-hero--split">
+    <div class="cs-hero__inner">
+
+      <div class="cs-hero__text">
+        <a href="work.html" class="cs-hero__back">← Back to Work</a>
+        <div class="cs-hero__tags">
+          <span class="cs-tag">UX Research</span>
+          <span class="cs-tag">UI Design</span>
+          <span class="cs-tag">Mobile App</span>
+          <span class="cs-tag">Google Certificate</span>
+        </div>
+        <h1 class="cs-hero__heading">Movies<br><em>App</em></h1>
+        <p class="cs-hero__sub">A movie ticketing app designed around how people actually choose what to watch. Not the studio. Not the algorithm. The user.</p>
+        <div class="cs-hero__meta">
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label">Role</span>
+            <span class="cs-hero__meta-value">Lead UX Researcher & UI Designer</span>
+          </div>
+          <div class="cs-hero__meta-divider"></div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label">Type</span>
+            <span class="cs-hero__meta-value">Google UX Certificate</span>
+          </div>
+          <div class="cs-hero__meta-divider"></div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label">Duration</span>
+            <span class="cs-hero__meta-value">Jan to Mar 2024</span>
+          </div>
+          <div class="cs-hero__meta-divider"></div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label">Tools</span>
+            <span class="cs-hero__meta-value">Figma · Framer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-hero__phone-wrap">
+        <div class="cs-hero__phone">
+          <div class="cs-hero__phone-notch">
+            <div class="cs-hero__phone-island"></div>
+          </div>
+          <div class="cs-hero__phone-screen">
+            <img src="img/movies-app-scroll.png" alt="Movies App screens" class="cs-hero__phone-img">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ OVERVIEW ══ -->
+  <section class="cs-section cs-section--light">
+    <div class="cs-section__inner">
+      <div class="cs-overview">
+        <div class="cs-overview__text">
+          <p class="cs-eyebrow">Project Overview</p>
+          <h2 class="cs-heading">A saturated market with<br><em>no good options.</em></h2>
+          <p class="cs-body">The movie ticketing space is crowded. Apps and websites for buying tickets exist everywhere, yet most of them feel outdated, cluttered, and indifferent to the person actually trying to use them. Seat selection is broken or missing. Rewards are buried. Navigation feels designed for a different era.</p>
+          <p class="cs-body">My goal was to design a ticketing app that puts the user first. Through research, testing, and iteration, I built something that makes going to the movies feel as easy as it should be.</p>
+        </div>
+        <div class="cs-overview__goals">
+          <p class="cs-eyebrow">Core Objectives</p>
+          <ul class="cs-goals-list">
+            <li>
+              <span class="cs-goals-icon">01</span>
+              <span>Enhance overall usability so any user can buy a ticket in under a minute</span>
+            </li>
+            <li>
+              <span class="cs-goals-icon">02</span>
+              <span>Streamline navigation to reduce friction between discovery and checkout</span>
+            </li>
+            <li>
+              <span class="cs-goals-icon">03</span>
+              <span>Build a seat selection experience that actually works on mobile</span>
+            </li>
+            <li>
+              <span class="cs-goals-icon">04</span>
+              <span>Improve accessibility so the app works for everyone, not just power users</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ RESEARCH STATS ══ -->
+  <section class="cs-section cs-section--dark">
+    <div class="cs-section__inner">
+      <p class="cs-eyebrow cs-eyebrow--light">User Research</p>
+      <h2 class="cs-heading cs-heading--light">8 interviews.<br><em>A clear pattern of frustration.</em></h2>
+      <p class="cs-body cs-body--light">I conducted 8 user interviews examining how people currently buy movie tickets and what frustrates them most. The findings pointed in one direction: existing apps are designed around the business, not the person buying the ticket.</p>
+      <div class="cs-stats">
+        <div class="cs-stat">
+          <span class="cs-stat__num">100%</span>
+          <p class="cs-stat__label">don't consistently use the same app or website to buy tickets</p>
+        </div>
+        <div class="cs-stat">
+          <span class="cs-stat__num">80%</span>
+          <p class="cs-stat__label">are frustrated by the lack of proper seat selection in current apps</p>
+        </div>
+        <div class="cs-stat">
+          <span class="cs-stat__num">80%</span>
+          <p class="cs-stat__label">find existing ticketing apps and websites cluttered and hard to navigate</p>
+        </div>
+        <div class="cs-stat">
+          <span class="cs-stat__num">60%</span>
+          <p class="cs-stat__label">wish rewards and loyalty tracking was easier to find and understand</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CHALLENGES ══ -->
+  <section class="cs-section cs-section--light">
+    <div class="cs-section__inner">
+      <p class="cs-eyebrow">Design Challenges</p>
+      <h2 class="cs-heading">Four problems worth<br><em>solving from scratch.</em></h2>
+      <div class="cs-challenges cs-challenges--4col">
+        <div class="cs-challenge cs-challenge--light">
+          <span class="cs-challenge__num">01</span>
+          <h3 class="cs-challenge__title">No Loyalty</h3>
+          <p class="cs-challenge__desc">Every person interviewed switches between apps depending on the theater. There is no product compelling enough to keep users coming back, which means every session starts from zero.</p>
+        </div>
+        <div class="cs-challenge cs-challenge--light">
+          <span class="cs-challenge__num">02</span>
+          <h3 class="cs-challenge__title">Broken Seat Selection</h3>
+          <p class="cs-challenge__desc">80% of users were frustrated by seat selection on existing apps. Cramped maps, no showtime preview, and unclear labeling make picking a seat more stressful than it should ever be.</p>
+        </div>
+        <div class="cs-challenge cs-challenge--light">
+          <span class="cs-challenge__num">03</span>
+          <h3 class="cs-challenge__title">Cluttered Interfaces</h3>
+          <p class="cs-challenge__desc">Most ticketing apps are visually overloaded with promotions, ads, and competing CTAs. Users lose the path to actually buying a ticket underneath everything else the app is trying to sell them.</p>
+        </div>
+        <div class="cs-challenge cs-challenge--light">
+          <span class="cs-challenge__num">04</span>
+          <h3 class="cs-challenge__title">Hidden Rewards</h3>
+          <p class="cs-challenge__desc">Rewards programs exist in most apps but 60% of users can't easily find or track them. When the incentive to come back is buried, it stops being an incentive at all.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ USER PERSONAS ══ -->
+  <section class="cs-section cs-section--dark">
+    <div class="cs-section__inner">
+      <p class="cs-eyebrow cs-eyebrow--light">User Research</p>
+      <h2 class="cs-heading cs-heading--light">Designing for<br><em>three real people.</em></h2>
+      <div class="cs-persona">
+        <div class="cs-persona__card">
+          <div class="cs-persona__avatar">JR</div>
+          <div class="cs-persona__info">
+            <h3 class="cs-persona__name">Jesse</h3>
+            <p class="cs-persona__role">Father of two · Suburban moviegoer · Weekend user</p>
+            <p class="cs-persona__quote">"I just want to grab tickets for the family without spending ten minutes trying to figure out the app."</p>
+          </div>
+        </div>
+        <div class="cs-persona__details">
+          <div class="cs-persona__col">
+            <p class="cs-persona__col-label">Becca</p>
+            <p class="cs-persona__col-text">Single adult who goes to the movies twice a month. Wants seat selection and rewards points but prefers not to download yet another app. She browses on the website when possible and abandons anything that feels like too much work.</p>
+          </div>
+          <div class="cs-persona__col">
+            <p class="cs-persona__col-label">Caleb</p>
+            <ul class="cs-persona__list">
+              <li>College student who wants simple, fast ticket access</li>
+              <li>Needs QR codes that actually scan at the door</li>
+              <li>Wants rewards info front and center, not buried</li>
+              <li>Uses his phone for everything and expects the app to keep up</li>
+            </ul>
+          </div>
+          <div class="cs-persona__col">
+            <p class="cs-persona__col-label">Shared Pain Points</p>
+            <ul class="cs-persona__list">
+              <li>No single app worth coming back to</li>
+              <li>Seat selection that is confusing or missing entirely</li>
+              <li>Cluttered screens that slow down a simple task</li>
+              <li>Rewards that feel impossible to track or redeem</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROCESS ══ -->
+  <section class="cs-section cs-section--light">
+    <div class="cs-section__inner">
+      <p class="cs-eyebrow">Design Process</p>
+      <h2 class="cs-heading">Three months.<br><em>One focused goal.</em></h2>
+      <div class="cs-process">
+        <div class="cs-process__step">
+          <div class="cs-process__icon">Discover</div>
+          <p class="cs-process__desc">Competitive analysis of existing ticketing apps and 8 user interviews to map real frustrations and habits.</p>
+        </div>
+        <div class="cs-process__connector">→</div>
+        <div class="cs-process__step">
+          <div class="cs-process__icon">Define</div>
+          <p class="cs-process__desc">Synthesized research into three user personas and identified the four core problems worth solving.</p>
+        </div>
+        <div class="cs-process__connector">→</div>
+        <div class="cs-process__step">
+          <div class="cs-process__icon">Design</div>
+          <p class="cs-process__desc">Built wireframes and a full interactive prototype in Figma focused on clean navigation and seat selection.</p>
+        </div>
+        <div class="cs-process__connector">→</div>
+        <div class="cs-process__step">
+          <div class="cs-process__icon">Test</div>
+          <p class="cs-process__desc">Ran usability tests with real users navigating the prototype without guidance, then iterated on the findings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ DESIGN SOLUTIONS ══ -->
+  <section class="cs-section cs-section--dark">
+    <div class="cs-section__inner">
+      <p class="cs-eyebrow cs-eyebrow--light">Design Solutions</p>
+      <h2 class="cs-heading cs-heading--light">What testing<br><em>confirmed and changed.</em></h2>
+      <div class="cs-solutions" style="border-color: rgba(255,255,255,0.08);">
+
+        <div class="cs-solution" style="border-bottom-color: rgba(255,255,255,0.08);">
+          <div class="cs-solution__image" style="background: #1a1a2e; border-right-color: rgba(255,255,255,0.08);">
+            <img src="img/movies-solution-1.png" alt="Clean uncluttered interface" class="cs-solution__img cs-solution__img--centered">
+          </div>
+          <div class="cs-solution__content">
+            <h3 class="cs-solution__title" style="color: var(--text-light);">Clean, Uncluttered Interface</h3>
+            <p class="cs-solution__desc" style="color: rgba(240,237,232,0.6);">Testing confirmed the core approach worked. Users praised the uncluttered layout and clear labeling throughout. Every screen was designed with one primary action so users never have to guess what to do next.</p>
+          </div>
+        </div>
+
+        <div class="cs-solution cs-solution--reversed" style="border-bottom-color: rgba(255,255,255,0.08);">
+          <div class="cs-solution__image" style="background: #1a1a2e; border-left-color: rgba(255,255,255,0.08);">
+            <img src="img/movies-solution-2.png" alt="Seat selection flow" class="cs-solution__img cs-solution__img--centered">
+          </div>
+          <div class="cs-solution__content">
+            <h3 class="cs-solution__title" style="color: var(--text-light);">Seat Selection That Works</h3>
+            <p class="cs-solution__desc" style="color: rgba(240,237,232,0.6);">Built a seat selection flow that shows multiple showtimes on the same screen so users can compare before committing. Testing flagged this as a standout feature. No more jumping back and forth between screens to find the right time and seat combination.</p>
+          </div>
+        </div>
+
+        <div class="cs-solution" style="border-bottom: none;">
+          <div class="cs-solution__image" style="background: #1a1a2e; border-right-color: rgba(255,255,255,0.08);">
+            <img src="img/movies-solution-3.png" alt="Rewards front and center" class="cs-solution__img cs-solution__img--centered">
+          </div>
+          <div class="cs-solution__content">
+            <h3 class="cs-solution__title" style="color: var(--text-light);">Rewards Front and Center</h3>
+            <p class="cs-solution__desc" style="color: rgba(240,237,232,0.6);">The rewards section tested as a genuine engagement driver. Based on feedback, the bottom nav was replaced with a floating rewards button so points are always one tap away. The label was also renamed from "You" to "Rewards" after testers found the original unclear.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ OUTCOME ══ -->
+  <section class="cs-section cs-section--light cs-outcome" style="border-top: 1px solid var(--border);">
+    <div class="cs-section__inner cs-section__inner--centered">
+      <p class="cs-eyebrow">Outcome</p>
+      <h2 class="cs-heading cs-heading--centered">A ticketing app built around<br><em>the person buying the ticket.</em></h2>
+      <p class="cs-body cs-body--centered">The final design addressed every major pain point surfaced in research. A clean interface, a seat selection flow that actually works on mobile, and a rewards system that is impossible to miss. The app gives users a reason to come back because it respects their time and makes the whole experience feel effortless.</p>
+      <a href="work.html" class="cs-outcome__btn" style="color: rgba(28,25,23,0.5); border-color: rgba(28,25,23,0.15);">← Back to All Work</a>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer" id="contact">
+    <div class="footer__inner">
+      <p class="footer__eyebrow">Let's collaborate</p>
+      <h2 class="footer__heading">Let's build something <em>great.</em></h2>
+      <a href="mailto:tophwilkins@gmail.com" class="footer__email">tophwilkins@gmail.com</a>
+      <div class="footer__links">
+        <a href="#">LinkedIn</a>
+        <a href="#">Dribbble</a>
+        <a href="#">Read.cv</a>
+      </div>
+      <p class="footer__copy">© 2026 Chris Wilkins. Designed with intention.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

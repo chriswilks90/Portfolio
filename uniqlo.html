@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Uniqlo Redesign | Chris Wilkins</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400;1,600;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cs.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ══ NAV ══ -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Chris Wilkins</a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="work.html" class="nav__active">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact" class="nav__cta">Let's Talk</a></li>
+    </ul>
+    <button class="nav__hamburger" id="navHamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+  <div class="nav__overlay" id="navOverlay"></div>
+
+  <!-- ══ CS HERO ══ -->
+  <section class="cs-hero">
+    <div class="cs-hero__inner">
+      <a href="work.html" class="cs-hero__back">← Back to Work</a>
+      <div class="cs-hero__tags">
+        <span class="cs-tag">UX Research</span>
+        <span class="cs-tag">UI Design</span>
+        <span class="cs-tag">Web Redesign</span>
+      </div>
+      <h1 class="cs-hero__heading">Uniqlo<br><em>Redesign</em></h1>
+      <p class="cs-hero__sub">Redesigning Uniqlo's homepage for desktop users. The existing mobile-first experience left desktop shoppers confused, frustrated, and ready to leave.</p>
+      <div class="cs-hero__meta">
+        <div class="cs-hero__meta-item">
+          <span class="cs-hero__meta-label">Role</span>
+          <span class="cs-hero__meta-value">Lead UX Researcher & UI Designer</span>
+        </div>
+        <div class="cs-hero__meta-divider"></div>
+        <div class="cs-hero__meta-item">
+          <span class="cs-hero__meta-label">Type</span>
+          <span class="cs-hero__meta-value">Academic Project</span>
+        </div>
+        <div class="cs-hero__meta-divider"></div>
+        <div class="cs-hero__meta-item">
+          <span class="cs-hero__meta-label">Duration</span>
+          <span class="cs-hero__meta-value">Jul to Sep 2023</span>
+        </div>
+        <div class="cs-hero__meta-divider"></div>
+        <div class="cs-hero__meta-item">
+          <span class="cs-hero__meta-label">Deliverable</span>
+          <span class="cs-hero__meta-value">Homepage Redesign</span>
+        </div>
+      </div>
+    </div>
+    <div class="cs-hero__browser">
+      <div class="cs-hero__browser-bar">
+        <div class="cs-hero__browser-dots">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="cs-hero__browser-url">uniqlo.com</div>
+      </div>
+      <div class="cs-hero__browser-screen">
+        <img src="img/uniqlo-hero.png" alt="Uniqlo homepage redesign" class="cs-hero__browser-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ OVERVIEW ══ -->
+  <section class="cs-section cs-section--light">
+    <div class="cs-section__inner">
+      <div class="cs-overview">
+        <div class="cs-overview__text">
+          <p class="cs-eyebrow">Project Overview</p>
+          <h2 class="cs-heading">A mobile-first site that<br><em>failed desktop shoppers.</em></h2>
+          <p class="cs-body">Uniqlo's website was built with mobile in mind, but the majority of considered purchase decisions happen on desktop. The result was a confusing, friction-heavy experience: gender categories that looked clickable but weren't, a choppy single-scroll layout, and no dropdown navigation to help users find what they came for.</p>
+          <p class="cs-body">My goal was to audit the existing experience, conduct user research, and redesign the homepage to better serve Uniqlo's core demographic. Gen Z and Millennials make up the majority of online shoppers and they deserved better.</p>
+        </div>
+        <div class="cs-overview__goals">
+          <p class="cs-eyebrow">Core Objectives</p>
+          <ul class="cs-goals-list">
+            <li>
+              <span class="cs-goals-icon">01</span>
+              <span>Fix confusing gender category navigation with clearly functional controls</span>
+            </li>
+            <li>
+              <span class="cs-goals-icon">02</span>
+              <span>Add hover-activated category dropdowns expected by desktop users</span>
+            </li>
+            <li>
+              <span class="cs-goals-icon">03</span>
+              <span>Redesign the homepage layout to properly utilize desktop screen real estate</span>
+            </li>
+            <li>
+              <span class="cs-goals-icon">04</span>
+              <span>Reduce friction between landing and product browsing for high-intent shoppers</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ RESEARCH STATS ══ -->
+  <section class="cs-section cs-section--dark">
+    <div class="cs-section__inner">
+      <p class="cs-eyebrow cs-eyebrow--light">User Research</p>
+      <h2 class="cs-heading cs-heading--light">9 interviews.<br><em>One clear picture.</em></h2>
+      <p class="cs-body cs-body--light">Each participant was asked to navigate the live Uniqlo website and attempt to purchase a shirt. The results confirmed what the design audit suggested. The desktop experience was broken in consistent, fixable ways.</p>
+      <div class="cs-stats">
+        <div class="cs-stat">
+          <span class="cs-stat__num">100%</span>
+          <p class="cs-stat__label">felt the site was optimized for mobile, not desktop</p>
+        </div>
+        <div class="cs-stat">
+          <span class="cs-stat__num">90%</span>
+          <p class="cs-stat__label">wanted a faster, simpler way to find and browse products</p>
+        </div>
+        <div class="cs-stat">
+          <span class="cs-stat__num">80%</span>
+          <p class="cs-stat__label">were confused by gender category buttons that appeared clickable but weren't</p>
+        </div>
+        <div class="cs-stat">
+          <span class="cs-stat__num">67%</span>
+          <p class="cs-stat__label">found the single-scroll landing page choppy and disorienting on desktop</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CHALLENGES ══ -->
+  <section class="cs-section cs-section--light">
+    <div class="cs-section__inner">
+      <p class="cs-eyebrow">Design Challenges</p>
+      <h2 class="cs-heading">Four problems to<br><em>solve by design.</em></h2>
+      <div class="cs-challenges cs-challenges--4col">
+        <div class="cs-challenge cs-challenge--light">
+          <span class="cs-challenge__num">01</span>
+          <h3 class="cs-challenge__title">Broken Navigation</h3>
+          <p class="cs-challenge__desc">Gender category buttons looked interactive but went nowhere. It was the single most-cited pain point across all 9 interviews and the first thing every user noticed.</p>
+        </div>
+        <div class="cs-challenge cs-challenge--light">
+          <span class="cs-challenge__num">02</span>
+          <h3 class="cs-challenge__title">No Dropdown Menus</h3>
+          <p class="cs-challenge__desc">Desktop users expect hover-activated category dropdowns. The mobile-ported nav offered none, forcing users to hunt for products with no clear browsing path.</p>
+        </div>
+        <div class="cs-challenge cs-challenge--light">
+          <span class="cs-challenge__num">03</span>
+          <h3 class="cs-challenge__title">Poor Layout Scaling</h3>
+          <p class="cs-challenge__desc">The single-scroll homepage was built for a phone. On a wide screen it felt awkward, with content that was too small, oddly stretched, or frustratingly slow to scroll through.</p>
+        </div>
+        <div class="cs-challenge cs-challenge--light">
+          <span class="cs-challenge__num">04</span>
+          <h3 class="cs-challenge__title">Missed Audience</h3>
+          <p class="cs-challenge__desc">Gen Z and Millennials are 25.3% more likely to shop online than average, yet the desktop experience didn't come close to meeting their baseline expectations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROCESS ══ -->
+  <section class="cs-section cs-section--dark">
+    <div class="cs-section__inner">
+      <p class="cs-eyebrow cs-eyebrow--light">Design Process</p>
+      <h2 class="cs-heading cs-heading--light">Four phases.<br><em>Two months of work.</em></h2>
+      <div class="cs-process cs-process--dark">
+        <div class="cs-process__step">
+          <div class="cs-process__icon">Discover</div>
+          <p class="cs-process__desc">Design audit of the existing Uniqlo site and competitive analysis of comparable e-commerce desktop experiences.</p>
+        </div>
+        <div class="cs-process__connector">→</div>
+        <div class="cs-process__step">
+          <div class="cs-process__icon">Define</div>
+          <p class="cs-process__desc">9 user interviews, synthesis of key pain points, and feature prioritization to align on what to fix first.</p>
+        </div>
+        <div class="cs-process__connector">→</div>
+        <div class="cs-process__step">
+          <div class="cs-process__icon">Develop</div>
+          <p class="cs-process__desc">Concept exploration, wireframes, and a full desktop-first homepage redesign addressing every major pain point.</p>
+        </div>
+        <div class="cs-process__connector">→</div>
+        <div class="cs-process__step">
+          <div class="cs-process__icon">Deliver</div>
+          <p class="cs-process__desc">User testing, feedback collection, and iteration cycles to reach a final polished design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ DESIGN SOLUTIONS ══ -->
+  <section class="cs-section cs-section--light">
+    <div class="cs-section__inner">
+      <p class="cs-eyebrow">Design Solutions</p>
+      <h2 class="cs-heading">Two fixes that<br><em>changed the experience.</em></h2>
+      <div class="cs-solutions">
+        <div class="cs-solution">
+          <div class="cs-solution__image">
+            <img src="img/uniqlo-solution-1.png" alt="Functional category navigation" class="cs-solution__img cs-solution__img--centered">
+          </div>
+          <div class="cs-solution__content">
+            <h3 class="cs-solution__title">Functional Category Navigation</h3>
+            <p class="cs-solution__desc">Replaced the non-functional gender category buttons with clearly labeled, clickable navigation that routes users directly to the right section. This eliminated the single most-reported point of confusion across all 9 interviews.</p>
+          </div>
+        </div>
+        <div class="cs-solution cs-solution--reversed">
+          <div class="cs-solution__image">
+            <img src="img/uniqlo-solution-2.png" alt="Hover-activated dropdown menus" class="cs-solution__img cs-solution__img--centered">
+          </div>
+          <div class="cs-solution__content">
+            <h3 class="cs-solution__title">Hover-Activated Dropdown Menus</h3>
+            <p class="cs-solution__desc">Added category dropdowns that activate on hover. This is the standard desktop nav pattern that 90% of users expected and the original site completely lacked. Now users can browse directly from the nav without hunting through the page.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ OUTCOME ══ -->
+  <section class="cs-section cs-section--dark cs-outcome">
+    <div class="cs-section__inner cs-section__inner--centered">
+      <p class="cs-eyebrow cs-eyebrow--light">Outcome</p>
+      <h2 class="cs-heading cs-heading--light cs-heading--centered">A desktop experience<br><em>Uniqlo shoppers deserved.</em></h2>
+      <p class="cs-body cs-body--light cs-body--centered">The redesign addressed every major pain point surfaced in research. Broken navigation was fixed, standard desktop patterns were added, and the layout was restructured to actually serve the screen it was being viewed on. The result is a homepage that respects how Gen Z and Millennial shoppers browse: quickly, confidently, and on a large screen.</p>
+      <a href="work.html" class="cs-outcome__btn">← Back to All Work</a>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer" id="contact">
+    <div class="footer__inner">
+      <p class="footer__eyebrow">Let's collaborate</p>
+      <h2 class="footer__heading">Let's build something <em>great.</em></h2>
+      <a href="mailto:tophwilkins@gmail.com" class="footer__email">tophwilkins@gmail.com</a>
+      <div class="footer__links">
+        <a href="#">LinkedIn</a>
+        <a href="#">Dribbble</a>
+        <a href="#">Read.cv</a>
+      </div>
+      <p class="footer__copy">© 2026 Chris Wilkins. Designed with intention.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
